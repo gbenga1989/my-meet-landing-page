@@ -106,6 +106,19 @@ button {
   display: none;
 }
 
+/* MEETING SECTION */
+
+.meeting-images img {
+  width: 100%;
+}
+
+.meeting-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  overflow-x: hidden;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
 
