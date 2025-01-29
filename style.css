@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --cyan-color: #4D96A9;
+  --cyan-lightcolor: rgb(143, 227, 249);
+  --purple-color: #855FB1;
+  --purple-lightcolor: rgb(217, 184, 255);
+  --slate-color: #28283D;
+  --slate-lightcolor: #87879D;
+  --white-color: #FAFAFA;
+}
+
+body {
+  margin: 0;
+  font-family: "Red Hat Display", serif;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-contents {
+  margin-top: 87px;
+  text-align: center;
+  max-width: 450px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 110%;
+  color: var(--slate-color);
+}
+
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--slate-lightcolor);
+}
+
+.hero-description {
+  margin-block: 32px;
+}
+
+.left-img {
+  margin-left: -25px;
+}
+
+.right-img {
+  margin-right: -25px;
+}
