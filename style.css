@@ -108,8 +108,21 @@ button {
 
 /* MEETING SECTION */
 
+.meeting-section {
+  margin-top: 72px;
+}
+
+.number-divider {
+  text-align: center;
+}
+
 .meeting-images img {
   width: 100%;
+
+}
+
+.meeting-images {
+  margin-block: 64px;
 }
 
 .meeting-images {
