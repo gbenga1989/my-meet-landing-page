@@ -72,3 +72,51 @@ p {
 .right-img {
   margin-right: -25px;
 }
+
+button {
+  border: none;
+  color: white;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+
+
+.download-btn {
+  background: var(--cyan-color);
+}
+
+.what-btn {
+  background: var(--purple-color);
+}
+
+.tablet-img {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  .left-img {
+    display: none;
+  }
+
+  .right-img {
+    display: none;
+  }
+
+  .tablet-img {
+    display: block;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
