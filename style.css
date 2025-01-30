@@ -161,7 +161,10 @@ button {
 }
 
 .number-2 {
+  position: relative;
   margin-top: 72px;
+  margin-bottom: -25px;
+  z-index: 1;
 }
 
 
@@ -174,11 +177,13 @@ footer {
   color: white;
   padding: 80px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .footer-contents {
   display: flex;
   overflow-x: none;
+  justify-content: space-between;
 }
 
 footer::before {
@@ -194,7 +199,6 @@ footer::before {
 footer h2,
 p,
 button {
-  position: relative;
   z-index: 1;
 }
 
@@ -203,11 +207,31 @@ button {
   font-weight: 900;
   font-size: 40px;
   line-height: 110%;
+  max-width: 330px;
 }
 
 .footer-description {
   color: var(--white-color);
+  max-width: 350px;
 }
+
+a {
+  z-index: 1;
+  text-decoration: none;
+}
+
+.footer-btn {
+  background-color: var(--purple-color);
+  position: none;
+  color: white;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
@@ -246,6 +270,30 @@ button {
     margin-inline: 30px;
   }
 
+  /* FOOTER SECTION */
+
+
+  .footer-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 110%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .footer-description {
+    color: var(--white-color);
+    max-width: 550px;
+    text-align: center;
+    padding-block: 24px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -276,6 +324,8 @@ button {
   .meeting-description {
     margin-inline: 32px;
   }
+
+
 }
 
 @media screen and (max-width: 500px) {
