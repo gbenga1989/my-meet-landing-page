@@ -110,6 +110,7 @@ button {
 
 .meeting-section {
   margin-top: 72px;
+  text-align: center;
 }
 
 .number-divider {
@@ -131,6 +132,12 @@ button {
   gap: 32px;
   overflow-x: hidden;
 }
+
+.meeting-description {
+  max-width: 545px;
+  margin: 0 auto;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
