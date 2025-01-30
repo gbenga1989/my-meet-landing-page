@@ -156,6 +156,14 @@ button {
   margin-bottom: 32px;
 }
 
+.meeting-content {
+  color: var(--slate-lightcolor);
+}
+
+.number-2 {
+  margin-top: 72px;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
 
@@ -183,6 +191,16 @@ button {
     align-items: center;
 
   }
+
+  /* MEETING SECTION */
+  .meeting-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    overflow-x: hidden;
+    margin-inline: 30px;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -208,6 +226,11 @@ button {
     display: block;
   }
 
+  /* MEETING SECTION */
+
+  .meeting-description {
+    margin-inline: 32px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -239,5 +262,11 @@ button {
     margin-top: 87px;
     text-align: center;
     max-width: 305px;
+  }
+
+  /* MEETING SECTION */
+  .meeting-subheader {
+    font-size: 32px;
+    padding-inline: 0;
   }
 }
